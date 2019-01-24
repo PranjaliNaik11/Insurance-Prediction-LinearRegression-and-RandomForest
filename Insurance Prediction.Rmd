@@ -1,7 +1,3 @@
----
-title: "Insurance Prediction"
-output: html_document
----
 
 ```{r}
 Data <- read.csv(file="insurance.csv", header=TRUE, sep=",")
@@ -30,7 +26,6 @@ rmse_a <- sqrt(mean(residuals_a^2))
 ```
 
 ```{r}
-#formula_1 <- as.formula("charges ~ age + bmi + children + smoker + region")
 
 model_b <- lm(charges ~ age + bmi + children + smoker + region, data = data_train)
 summary(model_b)
@@ -102,7 +97,6 @@ print(importance(output.forest,type = 2))
 
 ```{r}
 pred2 = predict(predict_rf,newdata = data_test[,1:6])
-#rf_r2 = r2_score(data_test$charges,pred2)
 varimp <- data.frame(predict_rf$importance)
 varimp
 
