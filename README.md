@@ -4,7 +4,7 @@
 
 This project involves analyzing insurance data to calculate insurance charges using basic demographic information. The data includes age, sex, BMI, number of children, smoking status, and region. The goal is to create models that predict insurance charges and evaluate their performance using various metrics. Additionally, predictions are made for hypothetical individuals, and the results are visualized using the `ggplot2` package in R.
 
-## Dataset Description
+## Dataset Description:
 
 The dataset consists of the following columns:
 
